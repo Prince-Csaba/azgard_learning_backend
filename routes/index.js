@@ -31,9 +31,9 @@ router.post('/setprogress', setProgress);
 
 router.post('/login', googleLogin);
 
-/* router.get('/fillcourses', fillCourses);
+router.get('/fillcourses', fillCourses);
 
-router.get('/fillquotes', fillQuotes); */
+router.get('/fillquotes', fillQuotes);
 
 router.delete('/deleteuser', deleteUser);
 

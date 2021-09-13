@@ -32,7 +32,10 @@ const { fillQuotes } = require('./controllers/FillQuotes');
 fillCourses();
 fillQuotes();
 
-/* app.use('/api', indexRouter); */
+app.get('/', (req, res) => {
+  res.send("Server is on! Express generator ruleeez!!");
+});
+
 app.use('/api', indexRouter);
 app.use('/users', usersRouter);
 
