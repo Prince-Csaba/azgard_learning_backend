@@ -8,8 +8,8 @@ const { getQuote } = require('../controllers/GetQuote');
 const { getProgress } = require('../controllers/GetProgress');
 const { setProgress } = require('../controllers/SetProgress');
 
-/* const { fillCourses } = require('../controllers/FillCourses');
-const { fillQuotes } = require('../controllers/FillQuotes'); */
+const { fillCourses } = require('../controllers/FillCourses');
+const { fillQuotes } = require('../controllers/FillQuotes');
 
 const { testController } = require('../controllers/TestController');
 
