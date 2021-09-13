@@ -18,8 +18,8 @@ var app = express();
 
 app.use(cors())
 
-/* app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
- */
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 
 // view engine setup
 app.use(logger('dev'));
@@ -27,10 +27,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-/* const { fillCourses } = require('./controllers/FillCourses');
+const { fillCourses } = require('./controllers/FillCourses');
 const { fillQuotes } = require('./controllers/FillQuotes');
 fillCourses();
-fillQuotes(); */
+fillQuotes();
 
 /* app.use('/api', indexRouter); */
 app.use('/api', indexRouter);
