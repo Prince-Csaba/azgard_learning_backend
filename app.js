@@ -33,7 +33,7 @@ fillCourses();
 fillQuotes();
 
 app.get('/', (req, res) => {
-  res.send("Server is on! Express generator ruleeez!!");
+  res.json({title: "Server is on! Express generator ruleeez!!"});
 });
 
 app.use('/api', indexRouter);
