@@ -4,7 +4,7 @@ exports.Signup =  async (req, res) => {
   console.log('Hellooooooooooooooooo!')
   console.log(req.body);
 
-  let newUser = new SignedUser({ email: req.body.email, name: "Ghost"});
+  let newUser = new SignedUser({ email: req.body.email, name: req.body.email.split('@')[0]});
  
   // save model to database
   newUser.save(function (err, user) {
